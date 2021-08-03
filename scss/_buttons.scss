@@ -1,0 +1,39 @@
+.btn-primary,
+.btn-secondary {
+    font-family: 'Popins', sans-serif;
+    display: inline-block;
+    padding: 0 2.6rem;
+    border-radius: 122px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 4.8rem;
+}
+
+.btn-primary {
+    background-color: $brand-yellow;
+    color: #855B35;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #FFDC5C;
+    }
+}
+
+.btn-secondary {
+    border: 1px solid #00A5F0;
+    background-color: transparent;
+    color: $brand-light-blue;
+    transition: all .3s;
+    &:hover {
+        background-color: $brand-light-blue;
+        color: #FFF;
+    }
+    &.white {
+        border: 1px solid #FFF;
+        color: #FFF;
+        &:hover {
+            background-color: #FFF;
+            color: $brand-green-light;
+        }
+    }
+}
+
