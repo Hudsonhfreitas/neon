@@ -19,6 +19,18 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -39,6 +51,12 @@ button {
 h1 {
   font-weight: 600;
   font-size: 6.4rem;
+}
+
+@media screen and (max-width: 1050px) {
+  h1 {
+    font-size: 5.2rem;
+  }
 }
 
 h2 {
@@ -220,6 +238,41 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #FFC800;
+}
+
+header .btn-mobile {
+  display: none;
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 1085px) {
+  header nav ul {
+    margin-right: 3rem;
+  }
+  header nav ul li:not(:first-child) {
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .logo {
+    max-width: 10.8rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .btn-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 7.3rem;
+  }
+  header nav .btn-secondary {
+    display: none;
+  }
 }
 
 footer {
@@ -528,17 +581,103 @@ footer .mensagem p {
   top: 4.1rem;
   left: 0;
   z-index: 2;
+  max-width: 43.5rem;
 }
 
 .s-hero .area-image .image .card-back {
   bottom: 4.6rem;
   right: 8.6rem;
   z-index: 1;
+  max-width: 35.2rem;
 }
 
 .s-hero .area-image .image .circle {
   top: 2.8rem;
   right: 4.3rem;
+  max-width: 55.3rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .s-hero .area-image {
+    margin-right: -13.4rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .s-hero .area-image {
+    margin-right: -8rem;
+  }
+  .s-hero .area-image .image .card-back {
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .s-hero {
+    padding-top: 14.5rem;
+    height: 65.6rem;
+  }
+  .s-hero .text ul {
+    margin-top: 4.5rem;
+  }
+  .s-hero .area-image {
+    margin-right: -1rem;
+  }
+  .s-hero .area-image h2 {
+    margin-bottom: 1.5rem;
+  }
+  .s-hero .area-image .image {
+    height: 45rem;
+  }
+  .s-hero .area-image .image .card-front {
+    max-width: 35rem;
+    top: 8rem;
+  }
+  .s-hero .area-image .image .card-back {
+    max-width: 29rem;
+    bottom: 0;
+  }
+  .s-hero .area-image .image .circle {
+    max-width: 46rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .s-hero {
+    height: 89.1rem;
+  }
+  .s-hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-hero .text {
+    margin-bottom: 5rem;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-hero .text h3 {
+    text-align: center;
+  }
+  .s-hero .text h1 {
+    text-align: center;
+  }
 }
 
 .s-card-neon {
