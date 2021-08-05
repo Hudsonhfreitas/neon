@@ -59,6 +59,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
 h2 {
   font-weight: bold;
   font-size: 4rem;
@@ -128,6 +134,15 @@ h1, h2, h3, h4 {
   font-size: 1.8rem;
   line-height: 150%;
   color: #5F5C6B;
+}
+
+@media screen and (max-width: 480px) {
+  .card-depoimentos {
+    height: 25.3rem;
+  }
+  .card-depoimentos p {
+    font-size: 1.6rem;
+  }
 }
 
 .btn-primary,
@@ -677,6 +692,92 @@ footer .mensagem p {
   }
   .s-hero .text h1 {
     text-align: center;
+    margin-bottom: 2.6rem;
+  }
+  .s-hero .text ul {
+    margin-top: 3.9rem;
+  }
+  .s-hero .area-image h2 {
+    margin-bottom: 1.9rem;
+  }
+  .s-hero .area-image .image {
+    max-width: 51.1rem;
+    height: 42.4rem;
+    margin: 0 auto;
+    top: 0;
+  }
+  .s-hero .area-image .image .circle {
+    max-width: 42.9rem;
+    top: 0;
+    right: 1.3rem;
+  }
+  .s-hero .area-image .image .card-front {
+    max-width: 34rem;
+    left: 0;
+    top: 3.5rem;
+  }
+  .s-hero .area-image .image .card-back {
+    max-width: 27.4rem;
+    right: 2.9rem;
+    bottom: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s-hero {
+    padding-top: 12.4rem;
+    height: 73.9rem;
+  }
+  .s-hero .text h3 {
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 1.5rem;
+  }
+  .s-hero .text h1 {
+    font-size: 3.2rem;
+    line-height: 112%;
+    margin-bottom: 3.7rem;
+  }
+  .s-hero .text ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 27.5rem;
+  }
+  .s-hero .text ul li:not(:last-child) {
+    margin-bottom: 1.7rem;
+  }
+  .s-hero .text ul li .icon {
+    width: 2rem;
+    height: auto;
+    background-color: transparent;
+  }
+  .s-hero .text ul li span br {
+    display: none;
+  }
+  .s-hero .area-image h2 {
+    display: none;
+  }
+  .s-hero .area-image .image {
+    max-width: 30.5rem;
+    height: 24.8rem;
+  }
+  .s-hero .area-image .image .circle {
+    max-width: 26.7rem;
+    right: 0;
+  }
+  .s-hero .area-image .image .card-front {
+    max-width: 21.1rem;
+    top: 2.9rem;
+  }
+  .s-hero .area-image .image .card-back {
+    max-width: 17rem;
+    bottom: 0;
+    right: 0.6rem;
   }
 }
 
@@ -927,6 +1028,202 @@ footer .mensagem p {
   margin-right: -3.1rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .s-card-neon .left-area .ilustra-mockup .circle {
+    display: none;
+  }
+  .s-card-neon .right-area {
+    max-width: 73rem;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt {
+    margin-left: 2rem;
+  }
+  .s-card-neon .right-area .box-card {
+    padding-left: 3.5rem;
+  }
+  .s-card-neon .right-area .box-card .image {
+    margin-right: -1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .s-card-neon .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .s-card-neon .right-area {
+    max-width: 100%;
+    margin-bottom: 9.8rem;
+  }
+  .s-card-neon .right-area .main-text {
+    margin-bottom: 5.7rem;
+  }
+  .s-card-neon .right-area .main-text h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5.3rem;
+    font-size: 3.6rem;
+  }
+  .s-card-neon .right-area .main-text .btn {
+    display: block;
+    text-align: center;
+  }
+  .s-card-neon .right-area .main-text .btn::after {
+    display: none;
+  }
+  .s-card-neon .right-area .box-card {
+    max-width: 94.7%;
+  }
+  .s-card-neon .right-area .box-card .image {
+    margin-right: -4rem;
+  }
+  .s-card-neon .left-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 61rem;
+    margin: 0 auto;
+  }
+  .s-card-neon .left-area .ilustra-mockup {
+    margin-bottom: 0;
+    max-width: 25.5rem;
+  }
+  .s-card-neon .left-area .text {
+    max-width: 27rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .s-card-neon {
+    padding-top: 16.9rem;
+  }
+  .s-card-neon .right-area .box-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 4.3rem;
+    max-width: 100%;
+    height: 47rem;
+    background-size: cover;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .s-card-neon .right-area .box-card .image {
+    margin-right: 0;
+  }
+  .s-card-neon .right-area .box-card .text {
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  .s-card-neon .right-area .box-card .text h3 {
+    text-align: center;
+  }
+  .s-card-neon .right-area .box-card .text p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s-card-neon {
+    position: relative;
+    padding-top: 8.6rem;
+  }
+  .s-card-neon::after {
+    content: '';
+    width: 100%;
+    height: 21.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7F7FA), to(rgba(247, 247, 250, 0)));
+    background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+    z-index: -1;
+  }
+  .s-card-neon .left-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .s-card-neon .left-area .ilustra-mockup {
+    height: 39.7rem;
+    overflow: hidden;
+  }
+  .s-card-neon .left-area .text {
+    margin-bottom: 4rem;
+  }
+  .s-card-neon .left-area .text .icon::before {
+    display: none;
+  }
+  .s-card-neon .right-area {
+    margin-bottom: 6.7rem;
+  }
+  .s-card-neon .right-area .main-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3.7rem;
+  }
+  .s-card-neon .right-area .main-text ul li {
+    padding: 2.8rem 0;
+  }
+  .s-card-neon .right-area .main-text ul li .info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt {
+    max-width: 71%;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt h3 {
+    font-size: 2rem;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt p {
+    font-size: 1.4rem;
+  }
+  .s-card-neon .right-area .box-card h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .s-card-neon .right-area .box-card h3 {
+    font-size: 2rem;
+  }
+  .s-card-neon .right-area .box-card .text p {
+    max-width: 25.3rem;
+    margin-bottom: 3.4rem;
+  }
+  .s-card-neon .right-area .box-card .text .btns .btn-primary {
+    padding: 0 3rem;
+  }
+  .s-card-neon .right-area .box-card .image {
+    max-width: 27.7rem;
+  }
+}
+
 .s-depoimentos {
   padding-top: 13.4rem;
 }
@@ -978,6 +1275,47 @@ footer .mensagem p {
 .s-depoimentos .slide-depoimentos {
   overflow: hidden;
   cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .s-depoimentos .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5.1rem;
+  }
+  .s-depoimentos .top h2 {
+    text-align: center;
+    margin-bottom: 5.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s-depoimentos {
+    padding-top: 7.6rem;
+  }
+  .s-depoimentos .container {
+    padding: 0;
+  }
+  .s-depoimentos .top {
+    margin-bottom: 3.4rem;
+  }
+  .s-depoimentos .top h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    max-width: 28.5rem;
+    margin-bottom: 3.4rem;
+  }
+  .s-depoimentos .top h2 span {
+    margin-bottom: 1.1rem;
+  }
+  .s-depoimentos .slide-depoimentos {
+    padding: 0 20px;
+  }
 }
 
 .s-conta-digital {

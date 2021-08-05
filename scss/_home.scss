@@ -143,6 +143,96 @@
             }
             h1 {
                 text-align: center;
+                margin-bottom: 2.6rem;
+            }
+            ul {
+                margin-top: 3.9rem;
+            }
+        }
+        .area-image {
+            h2 {
+                margin-bottom: 1.9rem;
+            }
+            .image {
+                max-width: 51.1rem;
+                height: 42.4rem;
+                margin: 0 auto;
+                top: 0;
+                .circle {
+                    max-width: 42.9rem;
+                    top: 0;
+                    right: 1.3rem;
+                }
+                .card-front {
+                    max-width: 34rem;
+                    left: 0;
+                    top: 3.5rem;
+                }
+                .card-back {
+                    max-width: 27.4rem;
+                    right: 2.9rem;
+                    bottom: 3.6rem;
+                }
+            }
+            
+            
+        }
+    }
+    @include responsive(480px){
+        padding-top: 12.4rem;
+        height: 73.9rem;
+        .text {
+            h3 {
+                font-size: 1.6rem;
+                line-height: 120%;
+                margin-bottom: 1.5rem;
+            }
+            h1 {
+                font-size: 3.2rem;
+                line-height: 112%;
+                margin-bottom: 3.7rem;
+            }
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 27.5rem;
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 1.7rem;
+                    }
+                    .icon {
+                        width:2rem;
+                        height: auto;
+                        background-color: transparent;
+                    }
+                    span {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .area-image {
+            h2 {
+                display: none;
+            }
+            .image {
+                max-width: 30.5rem;
+                height: 24.8rem;
+                .circle {
+                    max-width: 26.7rem;
+                    right: 0;
+                }
+                .card-front {
+                    max-width: 21.1rem;
+                    top: 2.9rem;
+                }
+                .card-back {
+                    max-width: 17rem;
+                    bottom: 0;
+                    right: 0.6rem;
+                }
             }
         }
     }
@@ -151,8 +241,7 @@
 .s-card-neon {
     padding-top: 12.9rem;
     .container {
-        @include flex(row, flex-start, space-between);
-        
+        @include flex(row, flex-start, space-between);  
     }
     .left-area {
         width: 100%;
@@ -303,11 +392,192 @@
                             margin-left: 1.6rem;
                         }
                     }
-                    
                 }
             }
             .image {
                 margin-right: -3.1rem;
+            }
+        }
+    }
+    @include responsive(1200px) {
+        .left-area {
+            .ilustra-mockup {
+                .circle {
+                    display: none;
+                }
+            }
+        }
+        .right-area {
+            max-width: 73rem;
+            .main-text {
+                ul {
+                    li {
+                        .info {
+                            .txt {
+                                margin-left: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .box-card {
+                padding-left: 3.5rem;
+                .image {
+                    margin-right: -1rem;
+                }
+            }
+        }
+    }
+    @include responsive(991px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+        .right-area {
+            max-width: 100%;
+            margin-bottom: 9.8rem;
+            .main-text {
+                margin-bottom: 5.7rem;
+                h2 {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 5.3rem;
+                    font-size: 3.6rem;
+                }
+                .btn {
+                    display: block;
+                    text-align: center;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            .box-card {
+                max-width: 94.7%;
+                .image {
+                    margin-right: -4rem;
+                }
+            }
+        }
+        .left-area {
+            @include flex(row, center, space-between);
+            max-width: 61rem;
+            margin: 0 auto;
+            .ilustra-mockup {
+                margin-bottom: 0;
+                max-width: 25.5rem;
+            }
+            .text {
+                max-width: 27rem;
+            }
+        }
+    }
+    @include responsive(600px){
+        padding-top: 16.9rem;
+        .right-area {
+            .box-card {
+                flex-direction: column;
+                padding-top: 4.3rem;
+                max-width: 100%;
+                height: 47rem;
+                background-size: cover;
+                padding-left: 0;
+                text-align: center;
+                margin-bottom: 4rem;
+                .image {
+                    margin-right: 0;
+                }
+                .text {
+                    max-width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    h3 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(480px) {
+        position: relative;
+        padding-top: 8.6rem;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 21.4rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            z-index: -1;
+        }
+        .left-area {
+            flex-direction: column-reverse;
+            .ilustra-mockup {
+                height: 39.7rem;
+                overflow: hidden;
+            }
+            .text {
+                margin-bottom: 4rem;
+                .icon {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .right-area {
+            margin-bottom: 6.7rem;
+            .main-text {
+                h2 {
+                    font-size: 2.8rem;
+                    margin-bottom: 3.7rem;
+                }
+                ul {
+                    li {
+                        padding: 2.8rem 0;
+                        .info {
+                            align-items: flex-start;
+                            .txt {
+                                max-width: 71%;
+                                h3 {
+                                    font-size: 2rem;
+                                }
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box-card {
+                h2 {
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                }
+                h3 {
+                    font-size: 2rem;
+                }
+                .text {
+                    p {
+                        max-width: 25.3rem;
+                        margin-bottom: 3.4rem;
+                    }
+                    .btns {
+                        .btn-primary {
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+                .image {
+                    max-width: 27.7rem;
+                }
             }
         }
     }
@@ -345,6 +615,38 @@
     .slide-depoimentos {
         overflow: hidden;
         cursor: pointer;
+    }
+    @include responsive(991px) {
+        .top {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5.1rem;
+            h2 {
+                text-align: center;
+                margin-bottom: 5.1rem;
+            }
+        }
+    }
+    @include responsive(480px) {
+        padding-top: 7.6rem;
+        .container {
+            padding: 0;
+        }
+        .top {
+            margin-bottom: 3.4rem;
+            h2 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                max-width: 28.5rem;
+                margin-bottom: 3.4rem;
+                span {
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+        .slide-depoimentos {
+            padding: 0 20px;
+        }
     }
 }
 

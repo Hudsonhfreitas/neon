@@ -4,6 +4,9 @@ h1 {
     @include responsive(1050px) {
         font-size: 5.2rem;
     }
+    @include responsive(991px) {
+        font-size: 4.8rem;
+    }
 }
 
 h2 {
