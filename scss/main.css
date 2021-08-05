@@ -305,7 +305,7 @@ header .btn-mobile-close {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin-right: 0;
-    height: 75%;
+    height: 60%;
   }
   header nav ul li {
     margin: 0;

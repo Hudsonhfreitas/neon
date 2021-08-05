@@ -39,6 +39,10 @@ header {
         display: none;
         margin-left: 4rem;
     }
+    .btn-mobile-close {
+        display: none;
+    }
+    
     @include responsive(1085px) {
         nav {
             ul {
@@ -56,20 +60,75 @@ header {
             max-width: 10.8rem;
         }
         nav {
-           ul {
-               display: none;
+            position: fixed;
+            right: -800px;
+            height: 100vh;
+            transition: right .3s linear;
+            width: 65%;
+            max-width: 35rem;
+            z-index: 1;
+            box-shadow: -5px 5px 10px rgba(0,0,0, 0.1);
+            background: linear-gradient(left,#00A5F0,#00D7D7);
+            top: 0;
+            flex-direction: column;
+            ul {
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-right: 0;
+                height: 60%;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 0;
+                    }
+                    margin: 0;
+                    text-align: center;
+                    a {
+                        font-size: 2rem;
+                    }
+                }
            }
-
-           .btn-mobile {
-               display: block;
-           }
+           .btn-mobile.close {
+                display: block;
+                height: 10%;
+                max-height: 8.8rem;
+                align-self: flex-end;
+                padding: 20px;
+            }
+            .btn-secondary.white {
+                margin: 20% 0;
+            }
+            &.active {
+                right: 0;
+            }
+        }
+        .btn-mobile {
+            display: block;
         }
     }
     @include responsive(480px) {
         height: 7.3rem;
         nav {
-            .btn-secondary {
-                display: none;
+            .btn-mobile{
+                height: 7.3rem;
+            }
+            .btn-secondary.white {
+                padding: 0 1.3rem;
+                margin: 15% 0;
+            }
+        }
+    }
+    @include responsive(340px) {
+        nav {
+            .btn-mobile{
+                height: 7.3rem;
+            }
+            ul {
+                li {
+                    font-size: 1.8rem;
+                }
+            }
+            .btn-secondary.white {
+                font-size: 1.4rem;
             }
         }
     }
