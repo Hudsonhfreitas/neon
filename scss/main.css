@@ -702,6 +702,8 @@ footer .mensagem p {
   left: 0;
   z-index: 2;
   max-width: 43.5rem;
+  -webkit-animation: floating 6s infinite;
+          animation: floating 6s infinite;
 }
 
 .s-hero .area-image .image .card-back {
@@ -709,6 +711,8 @@ footer .mensagem p {
   right: 8.6rem;
   z-index: 1;
   max-width: 35.2rem;
+  -webkit-animation: floating 8s infinite;
+          animation: floating 8s infinite;
 }
 
 .s-hero .area-image .image .circle {
@@ -1688,6 +1692,36 @@ footer .mensagem p {
     left: initial;
     top: 0;
     right: 0;
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  66% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  66% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=main.css.map */
