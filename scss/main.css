@@ -141,7 +141,7 @@ h1, h2, h3, h4 {
     height: 25.3rem;
   }
   .card-depoimentos p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -468,6 +468,111 @@ footer .mensagem p {
   line-height: 150%;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 991px) {
+  footer .main {
+    width: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 3.6rem;
+  }
+  footer .main nav {
+    width: 100%;
+    max-width: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .main nav .item {
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  footer .main .btns {
+    position: absolute;
+    right: 2rem;
+    bottom: 11rem;
+  }
+  footer .mensagem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .mensagem p {
+    margin-top: 1.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer .main .btns {
+    max-width: 22rem;
+    right: 0;
+  }
+  footer .main .btns button img {
+    display: none;
+  }
+  footer .main .btns button .info {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 4.3rem;
+    margin-bottom: 5.2rem;
+  }
+  footer .top .share {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3.2rem;
+  }
+  footer .top .share ul {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  footer .main nav .item {
+    width: 50%;
+    margin-bottom: 5.3rem;
+  }
+  footer .main .btns {
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  footer .main .btns button {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .main .btns button .info strong,
+  footer .main .btns button .info span {
+    text-align: center;
+    display: block;
+  }
 }
 
 .s-hero {
@@ -1423,5 +1528,166 @@ footer .mensagem p {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 1366px) {
+  .s-conta-digital .image img.mockup-01, .s-conta-digital .image img.mockup-02 {
+    max-width: 24rem;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-width: 1200px) {
+  .s-conta-digital {
+    padding-bottom: 18rem;
+  }
+  .s-conta-digital .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-conta-digital .text {
+    max-width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-conta-digital .text h2 {
+    text-align: center;
+    max-width: 80%;
+  }
+  .s-conta-digital .image {
+    margin-right: 0;
+    left: 0;
+    margin-top: 7.8rem;
+  }
+  .s-conta-digital .image img.mockup-01 {
+    top: 7.85rem;
+    max-width: initial;
+    left: 5rem;
+  }
+  .s-conta-digital .image img.mockup-02 {
+    top: 0;
+    right: 5rem;
+    left: unset;
+    max-width: initial;
+  }
+  .s-conta-digital .image img.circle {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-width: 991px) {
+  .s-conta-digital {
+    padding-top: 8.6rem;
+    padding-bottom: 8.1rem;
+  }
+  .s-conta-digital .text {
+    max-width: 100%;
+  }
+  .s-conta-digital .image {
+    max-width: 58.2rem;
+    height: 63.3rem;
+  }
+  .s-conta-digital .image img.circle {
+    width: 100%;
+  }
+  .s-conta-digital .image img.mockup-01 {
+    z-index: 2;
+  }
+  .s-conta-digital .image img.mockup-02 {
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-width: 600px) {
+  .s-conta-digital .image img.circle {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .s-conta-digital .image img.mockup-01, .s-conta-digital .image img.mockup-02 {
+    max-width: 20.5rem;
+    height: 45.9rem;
+  }
+  .s-conta-digital .image img.mockup-01 {
+    left: 3rem;
+  }
+  .s-conta-digital .image img.mockup-02 {
+    right: 3rem;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-width: 480px) {
+  .s-conta-digital {
+    padding-top: 5.7rem;
+    padding-bottom: 7.2rem;
+  }
+  .s-conta-digital .text h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    max-width: 100%;
+    margin-bottom: 3.9rem;
+  }
+  .s-conta-digital .text h2 span {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .s-conta-digital .text ul {
+    margin-bottom: 4.4rem;
+  }
+  .s-conta-digital .text ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-conta-digital .text ul li:not(:last-child) {
+    margin-bottom: 5.6rem;
+  }
+  .s-conta-digital .text ul li .icon {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+  .s-conta-digital .text ul li .info h4 {
+    text-align: center;
+    max-width: 28rem;
+  }
+  .s-conta-digital .text ul li .info p {
+    text-align: center;
+    font-size: 1.4rem;
+    max-width: 21rem;
+    margin: 0 auto;
+  }
+  .s-conta-digital .image {
+    max-width: 35.7rem;
+    height: 46.9rem;
+  }
+  .s-conta-digital .image img.mockup-01, .s-conta-digital .image img.mockup-02 {
+    max-width: 16.8rem;
+    height: initial;
+  }
+  .s-conta-digital .image img.mockup-01 {
+    bottom: initial;
+    top: 5.8rem;
+    left: initial;
+  }
+  .s-conta-digital .image img.mockup-02 {
+    left: initial;
+    top: 0;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

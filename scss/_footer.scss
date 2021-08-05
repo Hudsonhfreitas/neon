@@ -113,4 +113,95 @@ footer {
             opacity: 0.8;
         }
     }
+    @include responsive(991px) {
+        .main {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 3.6rem;
+            nav {
+                width: 100%;
+                max-width: initial;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .item {
+                    width: 33%;
+                    margin-bottom: 5rem;
+                }
+            }
+            .btns {
+                position: absolute;
+                right: 2rem;
+                bottom: 11rem;
+
+            }
+        }
+        .mensagem {
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-top: 1.2rem;
+                margin-left: 0;
+                text-align: center;
+            }
+            
+        }
+    }
+    @include responsive(650px) {
+        .main {
+            .btns {
+                max-width: 22rem;
+                right: 0;
+                button {
+                    img {
+                        display: none;
+                    }
+                    .info {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(480px) {
+        .top {
+            flex-direction: column;
+            align-items: center;  
+            padding-bottom: 4.3rem;
+            margin-bottom: 5.2rem;          
+            .share {
+                flex-direction: column;
+                margin-top: 3.2rem;
+                ul {
+                    margin-top: 2rem;
+                    margin-left: 0;
+                }
+            }
+        }
+        .main {
+            nav {
+                .item {
+                    width: 50%;
+                    margin-bottom: 5.3rem;
+                }
+            }
+            .btns {
+                max-width: 100%;
+                position: relative;
+                bottom: 0;
+                button {
+                    padding-left: 0;
+                    justify-content: center;
+                    .info {
+                        strong,
+                        span {
+                            text-align: center;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
