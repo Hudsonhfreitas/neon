@@ -260,6 +260,10 @@ header .btn-mobile {
   margin-left: 4rem;
 }
 
+header .btn-mobile-close {
+  display: none;
+}
+
 @media screen and (max-width: 1085px) {
   header nav ul {
     margin-right: 3rem;
@@ -273,10 +277,61 @@ header .btn-mobile {
   header .logo {
     max-width: 10.8rem;
   }
-  header nav ul {
-    display: none;
+  header nav {
+    position: fixed;
+    right: -800px;
+    height: 100vh;
+    -webkit-transition: right .3s linear;
+    transition: right .3s linear;
+    width: 65%;
+    max-width: 35rem;
+    z-index: 1;
+    -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    background: -webkit-gradient(linear, left top, right top, from(#00A5F0), to(#00D7D7));
+    background: linear-gradient(left, #00A5F0, #00D7D7);
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  header nav .btn-mobile {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-right: 0;
+    height: 75%;
+  }
+  header nav ul li {
+    margin: 0;
+    text-align: center;
+  }
+  header nav ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  header nav ul li a {
+    font-size: 2rem;
+  }
+  header nav .btn-mobile.close {
+    display: block;
+    height: 10%;
+    max-height: 8.8rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 20px;
+  }
+  header nav .btn-secondary.white {
+    margin: 20% 0;
+  }
+  header nav.active {
+    right: 0;
+  }
+  header .btn-mobile {
     display: block;
   }
 }
@@ -285,8 +340,24 @@ header .btn-mobile {
   header {
     height: 7.3rem;
   }
-  header nav .btn-secondary {
-    display: none;
+  header nav .btn-mobile {
+    height: 7.3rem;
+  }
+  header nav .btn-secondary.white {
+    padding: 0 1.3rem;
+    margin: 15% 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  header nav .btn-mobile {
+    height: 7.3rem;
+  }
+  header nav ul li {
+    font-size: 1.8rem;
+  }
+  header nav .btn-secondary.white {
+    font-size: 1.4rem;
   }
 }
 
