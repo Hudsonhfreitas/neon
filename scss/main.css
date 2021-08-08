@@ -285,7 +285,7 @@ header .btn-mobile-close {
     transition: right .3s linear;
     width: 65%;
     max-width: 35rem;
-    z-index: 1;
+    z-index: 999;
     -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
             box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
     background: -webkit-gradient(linear, left top, right top, from(#00A5F0), to(#00D7D7));
